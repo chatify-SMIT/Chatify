@@ -13,6 +13,6 @@ const config = {
   CometChatRegion: "US",
   CometChatAuthKey: "a9bf6a208710b3eacf3d61c940de49c025eef45e",
   CometChatAPIKey: "def56e0d5fd1f089e12bc25ffb12c1738398f3d6",
-  CometChatWidgetId: " d058e4f4-e5fe-44de-8318-e89398c177c2"
+  CometChatWidgetId: "a5a0cb24-c430-479c-befe-51fb97956b1b"
 };
 
