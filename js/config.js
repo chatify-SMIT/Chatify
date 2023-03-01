@@ -1,3 +1,7 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+
 const config = {
   apiKey: "AIzaSyCPxPZpLKn0KRhhCsF2WzWtqdzoNUSX0bU",
   authDomain:"chat-app-d957d.firebaseapp.com",
@@ -13,3 +17,6 @@ const config = {
   CometChatAPIKey: "def56e0d5fd1f089e12bc25ffb12c1738398f3d6",
   CometChatWidgetId: " d058e4f4-e5fe-44de-8318-e89398c177c2"
 };
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
