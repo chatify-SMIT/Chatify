@@ -1,5 +1,3 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 
 const config = {
@@ -18,5 +16,3 @@ const config = {
   CometChatWidgetId: " d058e4f4-e5fe-44de-8318-e89398c177c2"
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
