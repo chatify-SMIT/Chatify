@@ -1,8 +1,8 @@
 
 # **Chatify**
-
-![Logo](https://github.com/chatify-SMIT/Chatify/blob/master/img/readmechatify.png?raw=true)
-
+<p align="center">
+  <img src="https://github.com/chatify-SMIT/Chatify/blob/santhosh/img/readmechatify.png?raw=true" alt="Chatify">
+</p>
 
 ## Introduction
 **Chatify** is a developing real-time communication platform that allows users to send and receive text, audio, and video messages in real-time. Chat applications can be used for personal communication, such as messaging friends and family, or for business communication, such as team collaboration or customer support.
