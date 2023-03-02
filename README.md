@@ -9,7 +9,7 @@
 
 Chatify currently works on web platform which support different types of communication, such as one-on-one messaging, group messaging, and public chat rooms.
 
-Building a chatify application typically involves a server-side programming language such as [**Node.js**](https://nodejs.org/en/), and a front-end languages. Chatify is developed using [**Cometchat API**](https://www.cometchat.com/) and [**Fire base**](https://firebase.google.com/) as an backend.
+Building a chatify application typically involves a server-side programming language such as [**Node.js**](https://nodejs.org/en/), and a front-end languages. Chatify is developed using [**cometchat API**](https://www.cometchat.com/) and [**Fire base**](https://firebase.google.com/) as an backend.
 ## Features
 
 - **Real-time messaging :** User can send and receive messages in real-time.
