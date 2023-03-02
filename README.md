@@ -1,7 +1,7 @@
 
 # **Chatify**
 <p align="center">
-  <img src="https://github.com/chatify-SMIT/Chatify/blob/master/img/readmechatify.png?raw=true" alt="Chatify">
+  <img src="https://github.com/chatify-SMIT/Chatify/blob/santhosh/img/readmechatify.png?raw=true" alt="Chatify">
 </p>
 
 ## Introduction
