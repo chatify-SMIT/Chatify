@@ -61,10 +61,10 @@ Building a chatify application typically involves a server-side programming lang
 
 ## Feedback
 
-If you have any feedback, please reach out to us at **chatify.smit@gmail.com**
+If you have any feedback, please reach out to us at [**chatify.smit@gmail.com**](https://mail.google.com/mail/?view=cm&to=chatify.smit@gmail.com)
 
 
 ## Support
 
-For support, email **support.chatify@gmail.com**
+For support, email [**support.chatify@gmail.com**](https://mail.google.com/mail/?view=cm&to=support.chatify@gmail.com)
 
