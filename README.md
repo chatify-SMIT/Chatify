@@ -45,7 +45,7 @@ Building a chatify application typically involves a server-side programming lang
 
 ## We are Live
 
-**https://inquisitive-tartufo-8d27f2.netlify.app/**
+**https://chatifysmit.netlify.app/**
 
 
 ## Documentation 
