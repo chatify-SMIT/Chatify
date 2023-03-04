@@ -1,7 +1,9 @@
 
 # **Chatify**
 <p align="center">
+  <a  href="https://chatifysmit.netlify.app/">
   <img src="https://github.com/chatify-SMIT/Chatify/blob/santhosh/img/readmechatify.png?raw=true" alt="Chatify">
+  </a>
 </p>
 
 ## Introduction
