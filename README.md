@@ -14,19 +14,24 @@ Chatify currently works on web platform which support different types of communi
 Building a chatify application typically involves a server-side programming language such as [**Node.js**](https://nodejs.org/en/), and a front-end languages. Chatify is developed using [**cometchat API**](https://www.cometchat.com/) and [**Fire base**](https://firebase.google.com/) as an backend.
 ## Features
 
-- **Real-time messaging :** User can send and receive messages in real-time.
-- **Group messaging :** User can create and participate in group chats with multiple users.
-- **Message history :** Providing a record of past conversations of user.
+- **Real-time Messaging :** User can send and receive messages in real-time.
+- **Group Messaging :** User can create and participate in group chats with multiple users.
+- **Message History :** Providing a record of past conversations of user.
+- **Disappearing Messages :** Allows user to disappear the messages and media files after a certain period of time. 
 - **Notifications :** Alerting user when they receive new messages or when they are mentioned in a chat.
-- **Emojis and reactions :** Providing a way for user to express themselves through images or symbols.
-- **Customizable profiles :** Allows user to customize their profile picture, and other profile information.
-- **File sharing :** Allows users to share images, videos, or other files through the chat.
-- **Presence detection :** Indicates when a user is online, last seen and available for messaging.
+- **Emojis And Reactions :** Providing a way for user to express themselves through images or symbols.
+- **Customizable Profiles :** Allows user to customize their profile picture, and other profile information.
+- **Chat Themes :** Allows user to switch to the dark theme.
+- **Background Fonts :** Allows user to change the chat background color and font styles.
+- **File Sharing :** Allows users to share images, videos, or other files through the chat.
+- **Presence Detection :** Indicates when a user is online, last seen and available for messaging.
 - **Virtual Background :** Allows the user to have a virtual background during Video Calls.
-- **Screen sharing :** Allows user to share their computer screen with others during Video Calls.
+- **Screen Sharing :** Allows user to share their computer screen with others during Video Calls.
 - **Bots :** Allows the user to interact with bots in Group Chats.
-- **Multi-language support :** Allows user to chat in multiple languages.
+- **Multi-language Support :** Allows user to chat in multiple languages.
 - **Auto Message Translation :** Allows user to Translate message from one language to another.
+
+
 
 ## Lessons Learned
 
