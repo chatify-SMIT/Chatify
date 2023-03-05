@@ -36,7 +36,7 @@ Building a chatify application typically involves a server-side programming lang
 ## Lessons Learned
 
 #### Debugging Errors
-- Erorrs from the connection of API is found and corrected
+- Errors from the connection of API is found and corrected
 
 #### Languages Learned
 - HTML
