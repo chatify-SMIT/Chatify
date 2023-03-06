@@ -65,6 +65,7 @@ Building a chatify application typically involves a server-side programming lang
 - [**@Santhosh**](https://github.com/orgs/chatify-SMIT/people/santhoshparthiban2002)
 - [**@Don Brightson**](https://github.com/orgs/chatify-SMIT/people/Dbrightson)
 - [**@Densil Royin**](https://github.com/orgs/chatify-SMIT/people/Densil0223)
+- [**@Vignesh**](https://github.com/orgs/chatify-SMIT/people/Vignesh2126)
 
 
 ## Feedback
