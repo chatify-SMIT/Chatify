@@ -19,6 +19,11 @@ const signUpBtn = document.getElementById('signup__btn');
 // get login button.
 const loginBtn = document.getElementById('login__submit-btn');
 
+const imageInput = document.getElementById('imageInput');
+
+
+
+
 /**
  * hide sing up modal.
  */
@@ -97,46 +102,68 @@ function registerNewAccount({email, password, confirmPassword}) {
   if (validateNewAccount({email, password, confirmPassword})) {
     // show loading indicator.
     showLoading();
-    // get user avatar.
-    const userAvatar = generateAvatar();
-    // create new user's uuid.
-    const userUuid = uuid.v4(); 
-    // call firebase and cometchat service to register a new account.
-    auth.createUserWithEmailAndPassword(email, password).then((userCrendentials) => {
-      if (userCrendentials) {
-        // call firebase real time database to insert a new user.
-        realTimeDb.ref(`users/${userUuid}`).set({
-          id: userUuid,
-          email,
-          avatar: userAvatar
-        }).then(() => {
-          alert(`${userCrendentials.user.email} was created successfully! Please sign in with your created account`);
-          // call cometchat service to register a new account.
-          const user = new CometChatWidget.CometChat.User(userUuid);
-          user.setName(email);
-          user.setAvatar(userAvatar);
-          CometChatWidget.init({
-            "appID": `${config.CometChatAppId}`,
-            "appRegion": `${config.CometChatRegion}`,
-            "authKey": `${config.CometChatAuthKey}`
-          }).then(response => {
-            CometChatWidget.createOrUpdateUser(user).then(user => {
-              hideLoading();
-            } ,error => {
-              hideLoading();
+
+    // create a reference to the location where you want to store the image
+    const storageRef = storage.ref().child('images');
+
+    // get the image file from the user
+    const imageInput = document.getElementById('imageInput');
+    const file = imageInput.files[0];
+
+    // upload the selected file to Firebase Storage
+    const imageRef = storageRef.child(file.name);
+    imageRef.put(file).then(() => {
+      console.log('Image uploaded successfully');
+
+      // get the URL of the uploaded image
+      imageRef.getDownloadURL().then((url) => {
+
+        // call firebase and cometchat service to register a new account.
+        auth.createUserWithEmailAndPassword(email, password).then((userCrendentials) => {
+          if (userCrendentials) {
+            // call firebase real time database to insert a new user.
+            const userUuid = uuid.v4(); 
+            realTimeDb.ref(`users/${userUuid}`).set({
+              id: userUuid,
+              email,
+              avatar: url
+            }).then(() => {
+              alert(`${userCrendentials.user.email} was created successfully! Please sign in with your created account`);
+              // call cometchat service to register a new account.
+              const user = new CometChatWidget.CometChat.User(userUuid);
+              user.setName(email);
+              user.setAvatar(url);
+              CometChatWidget.init({
+                "appID": `${config.CometChatAppId}`,
+                "appRegion": `${config.CometChatRegion}`,
+                "authKey": `${config.CometChatAuthKey}`
+              }).then(response => {
+                CometChatWidget.createOrUpdateUser(user).then(user => {
+                  hideLoading();
+                } ,error => {
+                  hideLoading();
+                });
+                hideSignUp();
+              }, error => {
+                //Check the reason for error and take appropriate action.
+              });
             });
-            hideSignUp();
-          }, error => {
-            //Check the reason for error and take appropriate action.
-          });
+          }
+        }).catch((error) => {
+          hideLoading();
+          alert(`Cannot create your account, ${email} might be existed, please try again!`);
         });
-      }
+      }).catch((error) => {
+        hideLoading();
+        console.error(error);
+      });
     }).catch((error) => {
       hideLoading();
-      alert(`Cannot create your account, ${email} might be existed, please try again!`);
-    }); 
-  }
+      console.error(error);
+    });
+  } 
 }
+
 
 // add event for sign up button.
 if (signUpBtn) {

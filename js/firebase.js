@@ -16,3 +16,4 @@ const firebaseConfig = {
   const db = app.firestore();
   const auth = app.auth();
   const storage = firebase.storage();
+  const storageRef = storage.ref().child('images');
