@@ -49,16 +49,7 @@
       <div class="signup__form">
 
 
-        <div class="avatar-upload">
-          <div class="avatar-edit">
-              
-               <label class="form-label d-flex justify-content-center align-items-center" for="imageInput">
-              <i class="fas fa-pen"></i></label>
-          </div>
-          <div class="avatar-preview">
-              <div id="imageInputpreview" style="background-image: url();"></div>
-          </div>
-      </div>
+    
     <input  type="file" id="imageInput" >
         <input type="text" placeholder="Email" id="signup__email"/>
         <input type="password" placeholder="Password" id="signup__password"/>
@@ -93,43 +84,6 @@
 
   <script src="/js/util.js"></script>
   <script src="/js/login.js"></script>
-  <script>
-         var imageUploads = document.getElementById("imageInput");
-        imageUploads.addEventListener("change", function() {
-            readURL(this,"imageInputpreview");
-        });
 
-        function readURL(input,previewimg) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    var imagePreview = document.getElementById(previewimg);
-                    imagePreview.style.backgroundImage = 'url('+e.target.result +')';
-                    imagePreview.style.display = 'none';
-                    fadeIn(imagePreview, 650);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-
-
-
-        function fadeIn(element, duration) {
-            var opacity = 0;
-            var interval = 50;
-            var gap = interval / duration;
-            element.style.opacity = 0;
-            element.style.display = "block";
-            function func() {
-                opacity += gap;
-                element.style.opacity = opacity;
-                if(opacity >= 1) {
-                    clearInterval(fading);
-                }
-            }
-            var fading = setInterval(func, interval);
-        }
-
-  </script>
 </body>
 </html>
