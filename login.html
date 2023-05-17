@@ -7,6 +7,10 @@
   <title>Login</title>
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" href="img/chatifyicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script defer src="https://widget-js.cometchat.io/v3/cometchatwidget.js"></script>
 </head>
 <body>
@@ -43,7 +47,19 @@
       </div>
       <div class="signup__subtitle"></div>
       <div class="signup__form">
-        <input type="file" id="imageInput">
+
+
+        <div class="avatar-upload">
+          <div class="avatar-edit">
+              <input name="imageInput" type="file" id="imageInput" accept=".png, .jpg, .jpeg" required>
+               <label class="form-label d-flex justify-content-center align-items-center" for="imageInput">
+              <i class="fas fa-pen"></i></label>
+          </div>
+          <div class="avatar-preview">
+              <div id="imageInputpreview" style="background-image: url();"></div>
+          </div>
+      </div>
+
         <input type="text" placeholder="Email" id="signup__email"/>
         <input type="password" placeholder="Password" id="signup__password"/>
         <input type="password" placeholder="Confirm Password" id="signup__confirm-password"/>
@@ -77,5 +93,43 @@
 
   <script src="/js/util.js"></script>
   <script src="/js/login.js"></script>
+  <script>
+         var imageUploads = document.getElementById("imageInput");
+        imageUploads.addEventListener("change", function() {
+            readURL(this,"imageInputpreview");
+        });
+
+        function readURL(input,previewimg) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var imagePreview = document.getElementById(previewimg);
+                    imagePreview.style.backgroundImage = 'url('+e.target.result +')';
+                    imagePreview.style.display = 'none';
+                    fadeIn(imagePreview, 650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+
+        function fadeIn(element, duration) {
+            var opacity = 0;
+            var interval = 50;
+            var gap = interval / duration;
+            element.style.opacity = 0;
+            element.style.display = "block";
+            function func() {
+                opacity += gap;
+                element.style.opacity = opacity;
+                if(opacity >= 1) {
+                    clearInterval(fading);
+                }
+            }
+            var fading = setInterval(func, interval);
+        }
+
+  </script>
 </body>
 </html>
