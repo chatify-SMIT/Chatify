@@ -11,7 +11,7 @@
 
 Chatify currently works on web platform which support different types of communication, such as one-on-one messaging, group messaging, and public chat rooms.
 
-Building a chatify application typically involves a server-side programming language such as [**Node.js**](https://nodejs.org/en/), and a front-end languages. Chatify is developed using [**cometchat API**](https://www.cometchat.com/) and [**Fire base**](https://firebase.google.com/) as an backend.
+Building a chatify application typically involves a server-side programming language such as [**Node.js**](https://nodejs.org/en/), and a front-end languages. Chatify is developed using [**cometchat API**](https://www.cometchat.com/) and [**Fire base**](https://firebase.google.com/) as backend.
 ## Features
 
 - **Real-time Messaging :** User can send and receive messages in real-time.
@@ -36,7 +36,7 @@ Building a chatify application typically involves a server-side programming lang
 ## Lessons Learned
 
 #### Debugging Errors
-- Erorrs from the connection of API is found and corrected
+- Errors from the connection of API is found and corrected
 
 #### Languages Learned
 - HTML
@@ -56,14 +56,16 @@ Building a chatify application typically involves a server-side programming lang
 
 
 ## Documentation 
-- Chatify [**Help documentation**](#) 
-- Chatify [**Reference materials**](#) 
-- Chatify [**User guides**](#) 
+- Chatify [**SRS Documentation**](#) 
+- Chatify [**Help Documentation**](#) 
+- Chatify [**Reference Materials**](#) 
+- Chatify [**User Guides**](#) 
 ## Authors
 
 - [**@Santhosh**](https://github.com/orgs/chatify-SMIT/people/santhoshparthiban2002)
 - [**@Don Brightson**](https://github.com/orgs/chatify-SMIT/people/Dbrightson)
 - [**@Densil Royin**](https://github.com/orgs/chatify-SMIT/people/Densil0223)
+- [**@Vignesh**](https://github.com/orgs/chatify-SMIT/people/Vignesh2126)
 
 
 ## Feedback

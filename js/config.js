@@ -7,9 +7,9 @@ const config = {
   messagingSenderId: "530289849221",
   appId: "1:530289849221:web:4820f2fe7f882e51b8caec",
   measurementId: "G-DHFS5T7RTP",
-  CometChatAppId: "2339703596f32b10",
+  CometChatAppId: "239433561a21ac40",
   CometChatRegion: "US",
-  CometChatAuthKey: "c53f7be16ce9333cf3e69845e1870c4ed435ea67",
-  CometChatAPIKey: "086cdc92522f3b33b255b5655c85343dcbc29b8e",
-  CometChatWidgetId: "0ce7c17d-472e-4267-9383-936410fd276f"
+  CometChatAuthKey: "c82b87c097fbdfd1222cdb5bc08b61044edbde47",
+  CometChatAPIKey: "1a8d977535be06d44d85bfb21f2bc94bfc67c02b",
+  CometChatWidgetId: "631e1d9c-62d2-4892-930a-a1d7b2e35418"
 };
