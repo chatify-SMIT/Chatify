@@ -13,3 +13,4 @@ const config = {
   CometChatAPIKey: "1a8d977535be06d44d85bfb21f2bc94bfc67c02b",
   CometChatWidgetId: "631e1d9c-62d2-4892-930a-a1d7b2e35418"
 };
+
